@@ -6,17 +6,11 @@ import { inventory } from '../inventory/inventory';
 export class cartServis {
 	articlesInCart: inventory[] = [];
 
-	// public addArticleToCart(article){
-	// }
-
 	addArticleToCart(data: inventory) {
 		this.articlesInCart.push(data);
-
-		console.log('TREBALO BI NESTO BIT', this.articlesInCart);
 	}
 
 	getData() {
-		console.log('DOBIJENO: ', this.articlesInCart);
 		return this.articlesInCart;
 	}
 }
