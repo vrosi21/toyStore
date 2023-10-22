@@ -43,16 +43,9 @@ export class InventoryComponent {
 		},
 	];
 
-	// articlesInCart: inventory[] = [];
-
 	addToCart(article: inventory) {
-		// this.articlesInCart.push(article);
 		this.cart.addArticleToCart(article);
 	}
-
-	// removeFromCart(indexToRemove: number) {
-	// 	this.articlesInCart.splice(indexToRemove, 1);
-	// }
 
 	toggleStock() {
 		this.stockIsVisible = !this.stockIsVisible;

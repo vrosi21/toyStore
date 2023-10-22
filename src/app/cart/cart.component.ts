@@ -14,5 +14,7 @@ export class CartComponent {
 
 	articlesInCart: inventory[] = [];
 
-	public removeFromCart(indexToRemove: number) {}
+	public removeFromCart(indexToRemove: number) {
+		this.articlesInCart.splice(indexToRemove, 1);
+	}
 }
