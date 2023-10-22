@@ -1,33 +1,6 @@
 <h1>Welcome to {{ companyName }}</h1>
 
-<div *ngIf="1">
-	<app-cart2></app-cart2>
-	<!-- <h2>Cart</h2>
-
-	<table class="table">
-		<tr>
-			<th>Article name</th>
-			<th>Description</th>
-			<th>Stock</th>
-			<th>Price</th>
-			<th>Remove from cart</th>
-		</tr>
-		<tr
-			[ngClass]="e ? 'even' : 'odd'"
-			*ngFor="let article of articlesInCart; let index = index; let e = even"
-		>
-			<td>{{ article.name }}</td>
-			<td>{{ article.description }}</td>
-			<td>{{ article.stock }}</td>
-			<td>${{ article.price }}</td>
-			<td>
-				<button class="btn btn-primary" (click)="removeFromCart(index)">
-					Remove
-				</button>
-			</td>
-		</tr>
-	</table> -->
-</div>
+<app-cart2></app-cart2>
 
 <app-product-list
 	[products]="shopInventory"

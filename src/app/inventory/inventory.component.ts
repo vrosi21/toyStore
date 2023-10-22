@@ -46,8 +46,4 @@ export class InventoryComponent {
 	addToCart(article: inventory) {
 		this.cart.addArticleToCart(article);
 	}
-
-	toggleStock() {
-		this.stockIsVisible = !this.stockIsVisible;
-	}
 }
