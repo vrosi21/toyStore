@@ -1,0 +1,23 @@
+<h2>Store</h2>
+
+<table class="table">
+	<tr>
+		<th>Article name</th>
+		<th>Description</th>
+		<th>Stock</th>
+		<th>Price</th>
+		<th>Add to cart</th>
+	</tr>
+	<tr
+		[ngClass]="e ? 'even' : 'odd'"
+		*ngFor="let article of products; let e = even"
+	>
+		<td>{{ article.name }}</td>
+		<td>{{ article.description }}</td>
+		<td>{{ article.stock }}</td>
+		<td>${{ article.price }}</td>
+		<td>
+			<button class="btn btn-primary" (click)="addToCart(article)">Add</button>
+		</td>
+	</tr>
+</table>

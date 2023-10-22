@@ -1,0 +1,7 @@
+<app-inventory></app-inventory>
+
+<div [ngSwitch]="loginType">
+	<div *ngSwitchCase="'user'">Welcome user!</div>
+	<div *ngSwitchCase="'admin'">Welcome admin!</div>
+	<div *ngSwitchCase="'none'">Welcome!</div>
+</div>
